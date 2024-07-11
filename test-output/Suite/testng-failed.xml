@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Testing in Chrome(failed)">
+    <parameter name="browsername" value="Chrome"/>
+    <parameter name="version" value="126"/>
+    <parameter name="platform" value="Windows 11"/>
+    <classes>
+      <class name="Scenarios.testCases">
+        <methods>
+          <include name="Test_Scenario3"/>
+          <include name="setUp"/>
+          <include name="Test_Scenario2"/>
+          <include name="Test_Scenario1"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- Scenarios.testCases -->
+    </classes>
+  </test> <!-- Testing in Chrome(failed) -->
+  <test thread-count="5" parallel="tests" name="Testing on macOS(failed)">
+    <parameter name="browsername" value="firefox"/>
+    <parameter name="version" value="latest"/>
+    <parameter name="platform" value="macOS Sonoma"/>
+    <classes>
+      <class name="Scenarios.testCases">
+        <methods>
+          <include name="Test_Scenario3"/>
+          <include name="setUp"/>
+          <include name="Test_Scenario2"/>
+          <include name="Test_Scenario1"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- Scenarios.testCases -->
+    </classes>
+  </test> <!-- Testing on macOS(failed) -->
+</suite> <!-- Failed suite [Suite] -->

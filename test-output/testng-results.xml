@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="0" failed="0" skipped="6">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-07-10T21:54:36 CDT" name="Suite" finished-at="2024-07-10T21:54:38 CDT" duration-ms="1685">
+    <groups>
+    </groups>
+    <test started-at="2024-07-10T21:54:36 CDT" name="Testing in Chrome" finished-at="2024-07-10T21:54:38 CDT" duration-ms="1616">
+      <class name="Scenarios.testCases">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Scenarios.testCases@53aac487]" started-at="2024-07-10T21:54:36 CDT" name="setUp" finished-at="2024-07-10T21:54:38 CDT" duration-ms="1545" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[126]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows 11]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: All minutes for this organization has been exhausted 
+Host info: host: 'DESKTOP-49S7QMJ', ip: '192.168.1.238'
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: k5UdxCz6jNfxKCjPPAdyDt2ij2j..., build: LambTest, console: true, name: LambdaTest, network: true, project: SeleniumAssignment101, selenium_version: 4.0.0, username: mahajanisha, video: true, visual: true, w3c: true}, browserName: Chrome, browserVersion: 126, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 11}]}]
+Capabilities {LT:Options: {accessKey: k5UdxCz6jNfxKCjPPAdyDt2ij2j..., build: LambTest, console: true, name: LambdaTest, network: true, project: SeleniumAssignment101, selenium_version: 4.0.0, username: mahajanisha, video: true, visual: true, w3c: true}, browserName: Chrome, browserVersion: 126, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 11}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: All minutes for this organization has been exhausted 
+Host info: host: 'DESKTOP-49S7QMJ', ip: '192.168.1.238'
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: k5UdxCz6jNfxKCjPPAdyDt2ij2j..., build: LambTest, console: true, name: LambdaTest, network: true, project: SeleniumAssignment101, selenium_version: 4.0.0, username: mahajanisha, video: true, visual: true, w3c: true}, browserName: Chrome, browserVersion: 126, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 11}]}]
+Capabilities {LT:Options: {accessKey: k5UdxCz6jNfxKCjPPAdyDt2ij2j..., build: LambTest, console: true, name: LambdaTest, network: true, project: SeleniumAssignment101, selenium_version: 4.0.0, username: mahajanisha, video: true, visual: true, w3c: true}, browserName: Chrome, browserVersion: 126, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 11}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:141)
+at Scenarios.testCases.setUp(testCases.java:54)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Test_Scenario1()[pri:1, instance:Scenarios.testCases@53aac487]" started-at="2024-07-10T21:54:38 CDT" name="Test_Scenario1" finished-at="2024-07-10T21:54:38 CDT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: All minutes for this organization has been exhausted 
+Host info: host: 'DESKTOP-49S7QMJ', ip: '192.168.1.238'
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: k5UdxCz6jNfxKCjPPAdyDt2ij2j..., build: LambTest, console: true, name: LambdaTest, network: true, project: SeleniumAssignment101, selenium_version: 4.0.0, username: mahajanisha, video: true, visual: true, w3c: true}, browserName: Chrome, browserVersion: 126, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 11}]}]
+Capabilities {LT:Options: {accessKey: k5UdxCz6jNfxKCjPPAdyDt2ij2j..., build: LambTest, console: true, name: LambdaTest, network: true, project: SeleniumAssignment101, selenium_version: 4.0.0, username: mahajanisha, video: true, visual: true, w3c: true}, browserName: Chrome, browserVersion: 126, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 11}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: All minutes for this organization has been exhausted 
+Host info: host: 'DESKTOP-49S7QMJ', ip: '192.168.1.238'
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: k5UdxCz6jNfxKCjPPAdyDt2ij2j..., build: LambTest, console: true, name: LambdaTest, network: true, project: SeleniumAssignment101, selenium_version: 4.0.0, username: mahajanisha, video: true, visual: true, w3c: true}, browserName: Chrome, browserVersion: 126, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 11}]}]
+Capabilities {LT:Options: {accessKey: k5UdxCz6jNfxKCjPPAdyDt2ij2j..., build: LambTest, console: true, name: LambdaTest, network: true, project: SeleniumAssignment101, selenium_version: 4.0.0, username: mahajanisha, video: true, visual: true, w3c: true}, browserName: Chrome, browserVersion: 126, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 11}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:141)
+at Scenarios.testCases.setUp(testCases.java:54)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Scenario1 -->
+        <test-method signature="Test_Scenario2()[pri:2, instance:Scenarios.testCases@53aac487]" started-at="2024-07-10T21:54:38 CDT" name="Test_Scenario2" finished-at="2024-07-10T21:54:38 CDT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: All minutes for this organization has been exhausted 
+Host info: host: 'DESKTOP-49S7QMJ', ip: '192.168.1.238'
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: k5UdxCz6jNfxKCjPPAdyDt2ij2j..., build: LambTest, console: true, name: LambdaTest, network: true, project: SeleniumAssignment101, selenium_version: 4.0.0, username: mahajanisha, video: true, visual: true, w3c: true}, browserName: Chrome, browserVersion: 126, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 11}]}]
+Capabilities {LT:Options: {accessKey: k5UdxCz6jNfxKCjPPAdyDt2ij2j..., build: LambTest, console: true, name: LambdaTest, network: true, project: SeleniumAssignment101, selenium_version: 4.0.0, username: mahajanisha, video: true, visual: true, w3c: true}, browserName: Chrome, browserVersion: 126, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 11}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: All minutes for this organization has been exhausted 
+Host info: host: 'DESKTOP-49S7QMJ', ip: '192.168.1.238'
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: k5UdxCz6jNfxKCjPPAdyDt2ij2j..., build: LambTest, console: true, name: LambdaTest, network: true, project: SeleniumAssignment101, selenium_version: 4.0.0, username: mahajanisha, video: true, visual: true, w3c: true}, browserName: Chrome, browserVersion: 126, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 11}]}]
+Capabilities {LT:Options: {accessKey: k5UdxCz6jNfxKCjPPAdyDt2ij2j..., build: LambTest, console: true, name: LambdaTest, network: true, project: SeleniumAssignment101, selenium_version: 4.0.0, username: mahajanisha, video: true, visual: true, w3c: true}, browserName: Chrome, browserVersion: 126, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 11}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:141)
+at Scenarios.testCases.setUp(testCases.java:54)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Scenario2 -->
+        <test-method signature="Test_Scenario3()[pri:3, instance:Scenarios.testCases@53aac487]" started-at="2024-07-10T21:54:38 CDT" name="Test_Scenario3" finished-at="2024-07-10T21:54:38 CDT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: All minutes for this organization has been exhausted 
+Host info: host: 'DESKTOP-49S7QMJ', ip: '192.168.1.238'
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: k5UdxCz6jNfxKCjPPAdyDt2ij2j..., build: LambTest, console: true, name: LambdaTest, network: true, project: SeleniumAssignment101, selenium_version: 4.0.0, username: mahajanisha, video: true, visual: true, w3c: true}, browserName: Chrome, browserVersion: 126, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 11}]}]
+Capabilities {LT:Options: {accessKey: k5UdxCz6jNfxKCjPPAdyDt2ij2j..., build: LambTest, console: true, name: LambdaTest, network: true, project: SeleniumAssignment101, selenium_version: 4.0.0, username: mahajanisha, video: true, visual: true, w3c: true}, browserName: Chrome, browserVersion: 126, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 11}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: All minutes for this organization has been exhausted 
+Host info: host: 'DESKTOP-49S7QMJ', ip: '192.168.1.238'
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: k5UdxCz6jNfxKCjPPAdyDt2ij2j..., build: LambTest, console: true, name: LambdaTest, network: true, project: SeleniumAssignment101, selenium_version: 4.0.0, username: mahajanisha, video: true, visual: true, w3c: true}, browserName: Chrome, browserVersion: 126, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 11}]}]
+Capabilities {LT:Options: {accessKey: k5UdxCz6jNfxKCjPPAdyDt2ij2j..., build: LambTest, console: true, name: LambdaTest, network: true, project: SeleniumAssignment101, selenium_version: 4.0.0, username: mahajanisha, video: true, visual: true, w3c: true}, browserName: Chrome, browserVersion: 126, goog:chromeOptions: {args: [], extensions: []}, platformName: Windows 11}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:141)
+at Scenarios.testCases.setUp(testCases.java:54)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Scenario3 -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:Scenarios.testCases@53aac487]" started-at="2024-07-10T21:54:38 CDT" name="TearDown" finished-at="2024-07-10T21:54:38 CDT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- Scenarios.testCases -->
+    </test> <!-- Testing in Chrome -->
+    <test started-at="2024-07-10T21:54:36 CDT" name="Testing on macOS" finished-at="2024-07-10T21:54:38 CDT" duration-ms="1685">
+      <class name="Scenarios.testCases">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Scenarios.testCases@644baf4a]" started-at="2024-07-10T21:54:36 CDT" name="setUp" finished-at="2024-07-10T21:54:38 CDT" duration-ms="1637" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[latest]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[macOS Sonoma]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: All minutes for this organization has been exhausted 
+Host info: host: 'DESKTOP-49S7QMJ', ip: '192.168.1.238'
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: k5UdxCz6jNfxKCjPPAdyDt2ij2j..., build: LambTest, console: true, name: LambdaTest, network: true, project: SeleniumAssignment101, selenium_version: 4.0.0, username: mahajanisha, video: true, visual: true, w3c: true}, browserName: firefox, browserVersion: latest, goog:chromeOptions: {args: [], extensions: []}, platformName: macOS Sonoma}]}]
+Capabilities {LT:Options: {accessKey: k5UdxCz6jNfxKCjPPAdyDt2ij2j..., build: LambTest, console: true, name: LambdaTest, network: true, project: SeleniumAssignment101, selenium_version: 4.0.0, username: mahajanisha, video: true, visual: true, w3c: true}, browserName: firefox, browserVersion: latest, goog:chromeOptions: {args: [], extensions: []}, platformName: macOS Sonoma}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: All minutes for this organization has been exhausted 
+Host info: host: 'DESKTOP-49S7QMJ', ip: '192.168.1.238'
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: k5UdxCz6jNfxKCjPPAdyDt2ij2j..., build: LambTest, console: true, name: LambdaTest, network: true, project: SeleniumAssignment101, selenium_version: 4.0.0, username: mahajanisha, video: true, visual: true, w3c: true}, browserName: firefox, browserVersion: latest, goog:chromeOptions: {args: [], extensions: []}, platformName: macOS Sonoma}]}]
+Capabilities {LT:Options: {accessKey: k5UdxCz6jNfxKCjPPAdyDt2ij2j..., build: LambTest, console: true, name: LambdaTest, network: true, project: SeleniumAssignment101, selenium_version: 4.0.0, username: mahajanisha, video: true, visual: true, w3c: true}, browserName: firefox, browserVersion: latest, goog:chromeOptions: {args: [], extensions: []}, platformName: macOS Sonoma}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:141)
+at Scenarios.testCases.setUp(testCases.java:54)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Test_Scenario1()[pri:1, instance:Scenarios.testCases@644baf4a]" started-at="2024-07-10T21:54:38 CDT" name="Test_Scenario1" finished-at="2024-07-10T21:54:38 CDT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: All minutes for this organization has been exhausted 
+Host info: host: 'DESKTOP-49S7QMJ', ip: '192.168.1.238'
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: k5UdxCz6jNfxKCjPPAdyDt2ij2j..., build: LambTest, console: true, name: LambdaTest, network: true, project: SeleniumAssignment101, selenium_version: 4.0.0, username: mahajanisha, video: true, visual: true, w3c: true}, browserName: firefox, browserVersion: latest, goog:chromeOptions: {args: [], extensions: []}, platformName: macOS Sonoma}]}]
+Capabilities {LT:Options: {accessKey: k5UdxCz6jNfxKCjPPAdyDt2ij2j..., build: LambTest, console: true, name: LambdaTest, network: true, project: SeleniumAssignment101, selenium_version: 4.0.0, username: mahajanisha, video: true, visual: true, w3c: true}, browserName: firefox, browserVersion: latest, goog:chromeOptions: {args: [], extensions: []}, platformName: macOS Sonoma}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: All minutes for this organization has been exhausted 
+Host info: host: 'DESKTOP-49S7QMJ', ip: '192.168.1.238'
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: k5UdxCz6jNfxKCjPPAdyDt2ij2j..., build: LambTest, console: true, name: LambdaTest, network: true, project: SeleniumAssignment101, selenium_version: 4.0.0, username: mahajanisha, video: true, visual: true, w3c: true}, browserName: firefox, browserVersion: latest, goog:chromeOptions: {args: [], extensions: []}, platformName: macOS Sonoma}]}]
+Capabilities {LT:Options: {accessKey: k5UdxCz6jNfxKCjPPAdyDt2ij2j..., build: LambTest, console: true, name: LambdaTest, network: true, project: SeleniumAssignment101, selenium_version: 4.0.0, username: mahajanisha, video: true, visual: true, w3c: true}, browserName: firefox, browserVersion: latest, goog:chromeOptions: {args: [], extensions: []}, platformName: macOS Sonoma}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:141)
+at Scenarios.testCases.setUp(testCases.java:54)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Scenario1 -->
+        <test-method signature="Test_Scenario2()[pri:2, instance:Scenarios.testCases@644baf4a]" started-at="2024-07-10T21:54:38 CDT" name="Test_Scenario2" finished-at="2024-07-10T21:54:38 CDT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: All minutes for this organization has been exhausted 
+Host info: host: 'DESKTOP-49S7QMJ', ip: '192.168.1.238'
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: k5UdxCz6jNfxKCjPPAdyDt2ij2j..., build: LambTest, console: true, name: LambdaTest, network: true, project: SeleniumAssignment101, selenium_version: 4.0.0, username: mahajanisha, video: true, visual: true, w3c: true}, browserName: firefox, browserVersion: latest, goog:chromeOptions: {args: [], extensions: []}, platformName: macOS Sonoma}]}]
+Capabilities {LT:Options: {accessKey: k5UdxCz6jNfxKCjPPAdyDt2ij2j..., build: LambTest, console: true, name: LambdaTest, network: true, project: SeleniumAssignment101, selenium_version: 4.0.0, username: mahajanisha, video: true, visual: true, w3c: true}, browserName: firefox, browserVersion: latest, goog:chromeOptions: {args: [], extensions: []}, platformName: macOS Sonoma}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: All minutes for this organization has been exhausted 
+Host info: host: 'DESKTOP-49S7QMJ', ip: '192.168.1.238'
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: k5UdxCz6jNfxKCjPPAdyDt2ij2j..., build: LambTest, console: true, name: LambdaTest, network: true, project: SeleniumAssignment101, selenium_version: 4.0.0, username: mahajanisha, video: true, visual: true, w3c: true}, browserName: firefox, browserVersion: latest, goog:chromeOptions: {args: [], extensions: []}, platformName: macOS Sonoma}]}]
+Capabilities {LT:Options: {accessKey: k5UdxCz6jNfxKCjPPAdyDt2ij2j..., build: LambTest, console: true, name: LambdaTest, network: true, project: SeleniumAssignment101, selenium_version: 4.0.0, username: mahajanisha, video: true, visual: true, w3c: true}, browserName: firefox, browserVersion: latest, goog:chromeOptions: {args: [], extensions: []}, platformName: macOS Sonoma}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:141)
+at Scenarios.testCases.setUp(testCases.java:54)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Scenario2 -->
+        <test-method signature="Test_Scenario3()[pri:3, instance:Scenarios.testCases@644baf4a]" started-at="2024-07-10T21:54:38 CDT" name="Test_Scenario3" finished-at="2024-07-10T21:54:38 CDT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: All minutes for this organization has been exhausted 
+Host info: host: 'DESKTOP-49S7QMJ', ip: '192.168.1.238'
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: k5UdxCz6jNfxKCjPPAdyDt2ij2j..., build: LambTest, console: true, name: LambdaTest, network: true, project: SeleniumAssignment101, selenium_version: 4.0.0, username: mahajanisha, video: true, visual: true, w3c: true}, browserName: firefox, browserVersion: latest, goog:chromeOptions: {args: [], extensions: []}, platformName: macOS Sonoma}]}]
+Capabilities {LT:Options: {accessKey: k5UdxCz6jNfxKCjPPAdyDt2ij2j..., build: LambTest, console: true, name: LambdaTest, network: true, project: SeleniumAssignment101, selenium_version: 4.0.0, username: mahajanisha, video: true, visual: true, w3c: true}, browserName: firefox, browserVersion: latest, goog:chromeOptions: {args: [], extensions: []}, platformName: macOS Sonoma}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: All minutes for this organization has been exhausted 
+Host info: host: 'DESKTOP-49S7QMJ', ip: '192.168.1.238'
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {LT:Options: {accessKey: k5UdxCz6jNfxKCjPPAdyDt2ij2j..., build: LambTest, console: true, name: LambdaTest, network: true, project: SeleniumAssignment101, selenium_version: 4.0.0, username: mahajanisha, video: true, visual: true, w3c: true}, browserName: firefox, browserVersion: latest, goog:chromeOptions: {args: [], extensions: []}, platformName: macOS Sonoma}]}]
+Capabilities {LT:Options: {accessKey: k5UdxCz6jNfxKCjPPAdyDt2ij2j..., build: LambTest, console: true, name: LambdaTest, network: true, project: SeleniumAssignment101, selenium_version: 4.0.0, username: mahajanisha, video: true, visual: true, w3c: true}, browserName: firefox, browserVersion: latest, goog:chromeOptions: {args: [], extensions: []}, platformName: macOS Sonoma}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:141)
+at Scenarios.testCases.setUp(testCases.java:54)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Scenario3 -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:Scenarios.testCases@644baf4a]" started-at="2024-07-10T21:54:38 CDT" name="TearDown" finished-at="2024-07-10T21:54:38 CDT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- Scenarios.testCases -->
+    </test> <!-- Testing on macOS -->
+  </suite> <!-- Suite -->
+</testng-results>

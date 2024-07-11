@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Parallel Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Testing in Chrome(failed)">
+    <parameter name="browsername" value="Chrome"/>
+    <parameter name="version" value="126"/>
+    <parameter name="platform" value="Windows 11"/>
+    <classes>
+      <class name="Scenarios.testCases">
+        <methods>
+          <include name="Test_Scenario3"/>
+          <include name="setUp"/>
+          <include name="Test_Scenario2"/>
+          <include name="Test_Scenario1"/>
+        </methods>
+      </class> <!-- Scenarios.testCases -->
+    </classes>
+  </test> <!-- Testing in Chrome(failed) -->
+  <test thread-count="5" name="Testing in Edge(failed)">
+    <parameter name="browsername" value="Edge"/>
+    <parameter name="version" value="126"/>
+    <parameter name="platform" value="Windows 10"/>
+    <classes>
+      <class name="Scenarios.testCases">
+        <methods>
+          <include name="Test_Scenario3"/>
+          <include name="setUp"/>
+          <include name="Test_Scenario2"/>
+          <include name="Test_Scenario1"/>
+        </methods>
+      </class> <!-- Scenarios.testCases -->
+    </classes>
+  </test> <!-- Testing in Edge(failed) -->
+</suite> <!-- Failed suite [Parallel Test Suite] -->
